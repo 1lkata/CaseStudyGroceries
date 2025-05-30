@@ -24,7 +24,7 @@ public class Main {
     public static void writeToFile(ArrayList<String> items, String fileName) {
         try (PrintWriter writer = new PrintWriter(new FileOutputStream(fileName + ".txt"))) {
             for (int i = 0; i < items.size(); i++) {
-                writer.println((i + 1) + ". " + items.get(i));//ChatGPT told me how to add the index
+                writer.println((i + 1) + ". " + items.get(i));
             }
         } catch (IOException e) {
             System.err.println(e.getMessage());
